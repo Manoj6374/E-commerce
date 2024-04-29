@@ -1,0 +1,87 @@
+[debug] [2024-04-09T08:12:41.880Z] : 
+[debug] [2024-04-09T08:12:41.883Z] : ----------------------------------------------------------------------
+[debug] [2024-04-09T08:12:41.885Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2024-04-09T08:12:41.886Z] : CLI Version:  1.17.5
+[debug] [2024-04-09T08:12:41.888Z] : Platform:     win32
+[debug] [2024-04-09T08:12:41.889Z] : Node Version: v18.14.2
+[debug] [2024-04-09T08:12:41.891Z] : Time:         Tue Apr 09 2024 13:42:41 GMT+0530 (India Standard Time)
+[debug] [2024-04-09T08:12:41.892Z] : ----------------------------------------------------------------------
+[debug] [2024-04-09T08:12:41.893Z] : 
+[debug] [2024-04-09T08:13:09.331Z] : > authorizing via signed-in user option
+[debug] [2024-04-09T08:13:09.333Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-04-09T08:13:09.484Z] : > refreshing access token <
+[debug] [2024-04-09T08:13:09.488Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[warn] [2024-04-09T08:13:09.776Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-04-09T08:13:09.776Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.in
+
+[debug] [2024-04-09T08:13:09.777Z] : >>>> RETRYING
+
+[warn] [2024-04-09T08:13:09.787Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-04-09T08:13:09.787Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.in
+
+[debug] [2024-04-09T08:13:09.788Z] : >>>> RETRYING
+
+[warn] [2024-04-09T08:13:09.799Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-04-09T08:13:09.799Z] : API Error while firing request : getaddrinfo ENOTFOUND accounts.zoho.in
+
+[debug] [2024-04-09T08:13:09.799Z] : >>>> RETRYING
+
+[warn] [2024-04-09T08:13:09.807Z] : ‼ ENOTFOUND has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[error] [2024-04-09T08:13:09.865Z] : × API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.in
+[debug] [2024-04-09T08:13:09.866Z] : Error Stack: CatalystError: API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.in
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:162:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at API._retry (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:160:16)
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:205:56)
+    at Generator.next (<anonymous>)
+    at C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-04-09T08:13:09.866Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.in
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+[debug] [2024-04-09T08:13:09.866Z] : Error Status: 500
+[info] [2024-04-09T08:13:09.868Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-04-09T08:13:09.874Z] : × API Error: getaddrinfo ENOTFOUND accounts.zoho.in
+[debug] [2024-04-09T08:13:09.874Z] : Error Stack: CatalystError: API Error: getaddrinfo ENOTFOUND accounts.zoho.in
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:214:32)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-04-09T08:13:09.875Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.in
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+[debug] [2024-04-09T08:13:09.875Z] : Error Status: 500
+[info] [2024-04-09T08:13:09.876Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-04-09T08:13:09.878Z] : × API Error: getaddrinfo ENOTFOUND accounts.zoho.in
+[debug] [2024-04-09T08:13:09.878Z] : Error Stack: CatalystError: API Error: getaddrinfo ENOTFOUND accounts.zoho.in
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:214:32)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-04-09T08:13:09.879Z] : Original Error: Error: getaddrinfo ENOTFOUND accounts.zoho.in
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+[debug] [2024-04-09T08:13:09.879Z] : Error Status: 500
+[info] [2024-04-09T08:13:09.882Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-04-09T08:13:09.938Z] : × Error when refreshing the access token
+[debug] [2024-04-09T08:13:09.938Z] : Error Stack: CatalystError: Error when refreshing the access token
+    at C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\credential.js:139:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-04-09T08:13:09.938Z] : Original Error: CatalystError: API Error after retrying : getaddrinfo ENOTFOUND accounts.zoho.in
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:162:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:27:12)
+    at API._retry (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:160:16)
+    at API.<anonymous> (C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:205:56)
+    at Generator.next (<anonymous>)
+    at C:\Users\lenovo\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-04-09T08:13:09.939Z] : Error Status: 500
+[info] [2024-04-09T08:13:09.941Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2024-04-09T08:13:09.942Z] : EXEC ENDED with event: Error (Unexpected), message: Error when refreshing the access token
+[debug] [2024-04-09T08:13:09.943Z] : TOTAL DURATION OF COMMAND EXEC : 718
+[debug] [2024-04-09T08:13:09.945Z] : Unable to initialise the log API

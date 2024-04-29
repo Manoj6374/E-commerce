@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navlink {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.navlink li {
+  list-style: none;
+  font-size: large;
+  font-weight: 900;
+}
+
+.navlink li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navlink li a:hover {
+  text-decoration: underline;
+}
+
+.navicon {
+  display: none;
+}
+
+.side-nav {
+  background-color: #1d232c;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: none;
+}
+
+.cancel {
+  text-align: right;
+  color: white;
+  cursor: pointer;
+}
+
+.side-navlink li {
+  list-style: none;
+  font-size: large;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.side-navlink li a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-navlink li a:hover {
+  text-decoration: underline;
+}
+
+.header-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  width: 500px;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-weight: 40px;
+  font-size: 30px;
+  color: black;
+  width: 0ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid black;
+  animation: type 7s ease infinite;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+
+  50% {
+    width: 17ch;
+  }
+}
+
+.shopbtn {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.service {
+  padding: 10px;
+}
+
+.service-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.service-container-2 div {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.new-arrivel {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.new-arrivel-container {
+  position: relative;
+}
+
+.shopbtn1 {
+  padding: 5px;
+  color: black;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+footer {
+  background-color: #1d232c;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-left: 10px;
+}
+
+footer h1 {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+
+.icon {
+  display: flex;
+  width: 100vh;
+  justify-content: space-evenly;
+  margin-top: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-search {
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7px;
+  margin: 50px auto;
+}
+.product-search #search {
+  border: none;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-search input:hover {
+  outline: none;
+}
+.product-search input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+}
+.products {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product-box {
+  text-align: center;
+  flex-basis: 20%;
+}
+.product-box img {
+  border-radius: 5px;
+}
+.product-box p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .navicon {
+    display: block;
+  }
+
+  .navlink {
+    display: none;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .fash {
+    display: none;
+  }
+
+  .service-container-1 {
+    display: none;
+  }
+
+  .service-container-2 {
+    flex-direction: column;
+  }
+}
